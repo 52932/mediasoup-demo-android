@@ -211,10 +211,12 @@ public class RoomActivity extends AppCompatActivity {
 
   private void checkPermission() {
     String[] permissions = {
-      Manifest.permission.INTERNET,
-      Manifest.permission.RECORD_AUDIO,
-      Manifest.permission.CAMERA,
-      Manifest.permission.WRITE_EXTERNAL_STORAGE
+            "android.permission.MODIFY_AUDIO_SETTINGS",
+            "android.permission.RECORD_AUDIO",
+            "android.permission.INTERNET",
+            "android.permission.CAMERA",
+            Manifest.permission.WRITE_EXTERNAL_STORAGE,
+            Manifest.permission.READ_EXTERNAL_STORAGE,
     };
     String rationale = "Please provide permissions";
     Permissions.Options options =
